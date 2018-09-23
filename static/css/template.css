@@ -1,0 +1,342 @@
+/* CSS Style Sheet for Personal Website */
+
+/* Global */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#page {
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  border: 4px #000;
+  background-color: #ffffff;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #666;
+  font-family: 'Oswald', sans-serif;
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  line-height: 1.6em;
+  list-style-image: url("images/icon-plus.png");
+}
+
+ul li {
+  display: inline;
+  float: right;
+  padding: 10px;
+}
+
+ul li a,
+ul a :hover,
+ul li a:focus,
+ul li a:active {
+  border: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-holder {
+  background-color: #ffffff;
+  float: right;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+  right: -100%;
+  text-align: center;
+  top: 0;
+  transition: right .3s ease;
+  z-index: 99;
+}
+
+.title {
+  clear: left;
+  float: left;
+  width: 160px;
+}
+
+.content {
+  max-width: 1500px;
+}
+
+.center-mid-1 {
+  width: 940px;
+  background-color: #e0e9f0;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-mid-2 {
+  width: 940px;
+  background-color: #ADD8E6;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-mid-3 {
+  width: 940px;
+  background-color: #e0e9f0;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-2 {
+  width: 940px;
+  margin: auto;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.center-3 {
+  width: 400px;
+  margin: 0 0;
+}
+
+.center-2>h1,
+.center-2>p {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 350%;
+}
+
+p.center-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Index */
+.profile {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.intro {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.img-1 {
+  margin: auto;
+  width: 100%;
+}
+
+.img-2 {
+  margin: auto;
+  width: 30%;
+  height: 380px;
+}
+
+.img-2:nth-child(-n+2) {
+  padding-left: 8px;
+}
+
+/* Contact */
+fieldset {
+  border: 1px solid #d6d6d6;
+  background-color: #ADD8E6;
+  line-height: 1.6em;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 350px;
+}
+
+legend {
+  color: #666666;
+  font-style: italic;
+}
+
+input[type="text"] {
+  border: 1px solid #d6d6d6;
+  outline: none;
+  padding: 2px;
+  width: 150px;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+  background-color: #d0e2f0;
+  border: 1px solid #999999;
+}
+
+input[type="submit"] {
+  background-color: #009966;
+  border: 1px solid #006633;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #00CC33;
+  border: 1px solid #006633;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+iframe {
+  border: 0;
+  position: absolute;
+  top: 36%;
+  left: 46%;
+  width: 33%;
+  height: 38%;
+}
+
+figcaption {
+  font-family: 'Merriweather', serif;
+}
+
+/* Schedule */
+table {
+  border-spacing: 0px;
+}
+
+th, td {
+  border-spacing: 0px;
+  background-color: #6ed3cf;
+  border-top: 1px solid #f1f8fe;
+  border-bottom: 1px solid #cbd2d8;
+  border-right: 1px solid #cbd2d8;
+  font-size: 90%;
+  margin: 0px;
+  padding: 10px 30px 10px 10px;
+  text-align: left;
+}
+
+td {
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+tr.head th {
+  background-color: #3a4660;
+  border-bottom: 2px solid #547ca0;
+  border-right: 1px solid #749abe;
+  border-top: 1px solid #90b4d6;
+  color: #fff;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-shadow: -1px -1px 1px #666666;
+}
+
+tr.even td,
+tr.even th {
+  background-color: #7dce94;
+}
+
+tr.head th:first-child {
+  /* WebKit is a browser engine used in Apple's Safari browser, Amazon
+      Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+
+      Not all CSS3 properties work well in all browsers. In a way to ensure that web pages
+      display as expected in their browsers, vendors like Mozilla and Webkit developed their
+      own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+      However, it is not unusual to still see these properties used in stylesheets.
+
+      */
+  /* Webkit property*/
+  -webkit-border-top-left-radius: 5px;
+  /* Mozilla property*/
+  -moz-border-radius-topleft: 5px;
+  /* CSS3 property*/
+  border-top-left-radius: 5px;
+  /* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+}
+
+tr.head th:last-child {
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+}
+
+.submit {
+  width: 310px;
+  text-align: right;
+}
+
+/* Artwork */
+#citycorner {
+  width: 100%;
+  height: 100%;
+}
+
+#woman {
+  width: 100%;
+  height: 50%;
+}
+
+#feast {
+  width: 100%;
+  height: 50%;
+}
+
+#teapot {
+  width: 100%;
+  height: 50%;
+}
+
+#beyond {
+  width: 100%;
+  height: 50%;
+}
+
+#sd {
+  width: 100%;
+  height: 100%;
+}
+
+#ssdf {
+  width: 100%;
+  height: 50%;
+}
+
+#gfdg {
+  width: 100%;
+  height: 50%;
+}
+
+#meat {
+  width: 100%;
+  height: 50%;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+.smlogo {
+  margin: auto;
+  width: 40px;
+  height: 50px;
+}

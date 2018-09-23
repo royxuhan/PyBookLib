@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Index page for personal website -->
+
+<!-- head section -->
+<head>
+  <title>Index</title>
+  <link rel="icon" href="images/logo1.jpg">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <meta name="description" content="Best Book Recommendation System">
+  <meta name="author" content="Roy Xu">
+  <meta name="keywords" content="Book, Rating, Recommendation">
+  <meta name="copyright" content="Roy Xu 2018 and beyond...">
+</head>
+
+<!-- body section -->
+<body>
+  <div id="page">
+    <div class="menu-holder">
+
+      <!-- top header -->
+      <nav id="header-main-menu">
+        <ul class="main-menu ">
+          <li>
+            <a href="https://www.nytimes.com/books/best-sellers/" target="_blank"> New York Times Best Sellers </a>
+          </li>
+          <li>
+            <a href="https://www.gatesnotes.com/About-Bill-Gates/Summer-Books-2018" target="_blank"> 5 Books to Read by Bill Gates</a>
+          </li>
+          <li>
+            <a href="https://www.washingtonpost.com/entertainment/books/barack-obamas-summer-reading-list-is-everything-we-need-right-now/2018/08/19/18ed91c4-a3d9-11e8-a656-943eefab5daf_story.html?noredirect=on&utm_term=.24c8d0edfcbe" target="_blank"> Obama's Summer Reading List </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <br/>
+
+    <!-- profile - talk about career goals and personal information -->
+    <h1> What Should I Read Next? </h1>
+    <img class ="profile" src="img/logo.jpg" alt="Profile Picture" title="Logo" />
+    <!-- contact me section -->
+    <div class="center-mid-3">
+      <form action="http://www.example.com/form.php" method="get">
+        <!-- form for visitor information -->
+        <fieldset>
+          <p>
+            <legend class="center-3"> Hi there!
+              <br> Simply type a book you like and click on the closest match.</legend><br/>
+            <label class="title" for="name"> Pick a genre! </label>
+            <input type="text" name="name" id="name"><br />
+            <label class="title" for="email"> Name of the book </label>
+            <input type="text" name="email" id="email"></p>
+            <p><label for="location" class="title"> Give a rating! (5 is the best!) </label>
+              <select name="location" id="location">
+							 <option value="ny">5</option>
+							 <option value="il">4</option>
+							 <option value="ca">3</option>
+               <option value="ny">2</option>
+							 <option value="il">1</option>
+						 </select></p>
+            <span class="title">How's your day going?</span>
+            <label><input type="radio" name="member" value="yes" /> Great!</label>
+            <label><input type="radio" name="member" value="no" /> Can't be better!!</label>
+          </p>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Register" /></div>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div>
+        <p> © HackCMU | 2018 </p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
