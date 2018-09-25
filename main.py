@@ -11,7 +11,7 @@ def home():
 
 @app.route("/salvador")
 def run():
-    return 42
+    return predict([(122, 5), (1333, 4), (2499, 3)])
 
 
 if __name__ == "__main__":
